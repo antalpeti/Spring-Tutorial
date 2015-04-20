@@ -2,5 +2,45 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="E:/Software Engineering/Spring/commons-logging-1.2/commons-logging-1.2.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/E:/Software%20Engineering/Spring/commons-logging-1.2/commons-logging-1.2-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="E:/Software Engineering/Spring/spring-framework-4.1.5.RELEASE/libs/spring-aop-4.1.5.RELEASE.jar" sourcepath="E:/Software Engineering/Spring/spring-framework-4.1.5.RELEASE/libs/spring-aop-4.1.5.RELEASE-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/E:/Software%20Engineering/Spring/spring-framework-4.1.5.RELEASE/libs/spring-aop-4.1.5.RELEASE-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="E:/Software Engineering/Spring/spring-framework-4.1.5.RELEASE/libs/spring-aspects-4.1.5.RELEASE.jar" sourcepath="E:/Software Engineering/Spring/spring-framework-4.1.5.RELEASE/libs/spring-aspects-4.1.5.RELEASE-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/E:/Software%20Engineering/Spring/spring-framework-4.1.5.RELEASE/libs/spring-aspects-4.1.5.RELEASE-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="E:/Software Engineering/Spring/spring-framework-4.1.5.RELEASE/libs/spring-beans-4.1.5.RELEASE.jar" sourcepath="E:/Software Engineering/Spring/spring-framework-4.1.5.RELEASE/libs/spring-beans-4.1.5.RELEASE-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/E:/Software%20Engineering/Spring/spring-framework-4.1.5.RELEASE/libs/spring-beans-4.1.5.RELEASE-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="E:/Software Engineering/Spring/spring-framework-4.1.5.RELEASE/libs/spring-context-4.1.5.RELEASE.jar" sourcepath="E:/Software Engineering/Spring/spring-framework-4.1.5.RELEASE/libs/spring-context-4.1.5.RELEASE-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/E:/Software%20Engineering/Spring/spring-framework-4.1.5.RELEASE/libs/spring-context-4.1.5.RELEASE-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="E:/Software Engineering/Spring/spring-framework-4.1.5.RELEASE/libs/spring-context-support-4.1.5.RELEASE.jar" sourcepath="E:/Software Engineering/Spring/spring-framework-4.1.5.RELEASE/libs/spring-context-support-4.1.5.RELEASE-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/E:/Software%20Engineering/Spring/spring-framework-4.1.5.RELEASE/libs/spring-context-support-4.1.5.RELEASE-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="E:/Software Engineering/Spring/spring-framework-4.1.5.RELEASE/libs/spring-core-4.1.5.RELEASE.jar" sourcepath="E:/Software Engineering/Spring/spring-framework-4.1.5.RELEASE/libs/spring-core-4.1.5.RELEASE-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/E:/Software%20Engineering/Spring/spring-framework-4.1.5.RELEASE/libs/spring-core-4.1.5.RELEASE-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="E:/Software Engineering/Spring/spring-framework-4.1.5.RELEASE/libs/spring-expression-4.1.5.RELEASE.jar" sourcepath="E:/Software Engineering/Spring/spring-framework-4.1.5.RELEASE/libs/spring-expression-4.1.5.RELEASE-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Software%20Engineering/Spring/spring-framework-4.1.5.RELEASE/libs/spring-expression-4.1.5.RELEASE-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
