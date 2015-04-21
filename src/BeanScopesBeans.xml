@@ -8,5 +8,8 @@
    <bean id="singletonHelloWorld" class="com.tutorialspoint.beanscopes.HelloWorld" 
       scope="singleton">
    </bean>
+   <bean id="prototypeHelloWorld" class="com.tutorialspoint.beanscopes.HelloWorld" 
+      scope="prototype">
+   </bean>
 
 </beans>
