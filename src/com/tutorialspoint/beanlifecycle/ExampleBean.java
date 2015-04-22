@@ -12,7 +12,7 @@ public class ExampleBean implements InitializingBean, DisposableBean {
 
   @Override
   public void destroy() throws Exception {
-    System.out.println("Destruction with help of InitializingBean interface.");
+    System.out.println("Destruction with help of DisposableBean interface.");
   }
 
   public void initByXML() {
