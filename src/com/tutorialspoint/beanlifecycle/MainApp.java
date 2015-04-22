@@ -9,7 +9,9 @@ public class MainApp {
     AbstractApplicationContext context =
         new ClassPathXmlApplicationContext("BeanLifeCycleBeans.xml");
 
-    ExampleBean obj = (ExampleBean) context.getBean("exampleBean");
+    ExampleBean obj1 = (ExampleBean) context.getBean("exampleBean");
+    HelloWorld obj2 = (HelloWorld) context.getBean("helloWorld");
+    obj2.getMessage();
     context.registerShutdownHook();
     context.close();
   }
