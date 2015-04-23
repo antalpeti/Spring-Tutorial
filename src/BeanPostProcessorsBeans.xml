@@ -12,4 +12,9 @@
 
    <bean class="com.tutorialspoint.beanpostprocessors.InitHelloWorld" />
 
+   <bean id="person" class="com.tutorialspoint.beanpostprocessors.Person">
+       <property name="name" value="Peter"/>
+       <property name="age" value="32"/>
+   </bean>
+   
 </beans>
