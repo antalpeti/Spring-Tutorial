@@ -1,17 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <beans xmlns="http://www.springframework.org/schema/beans"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.springframework.org/schema/beans
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-   <!-- Definition for textEditor bean -->
-   <bean id="textEditor" class="com.tutorialspoint.dependencyinjection.TextEditor">
-      <constructor-arg ref="spellChecker"/>
-   </bean>
+	<!-- Definition for textEditor bean -->
+	<bean id="textEditor" class="com.tutorialspoint.dependencyinjection.TextEditor">
+		<constructor-arg ref="spellChecker" />
+	</bean>
 
-   <!-- Definition for spellChecker bean -->
-   <bean id="spellChecker" class="com.tutorialspoint.dependencyinjection.SpellChecker">
-   </bean>
+	<!-- Definition for spellChecker bean -->
+	<bean id="spellChecker" class="com.tutorialspoint.dependencyinjection.SpellChecker">
+	</bean>
+
+	<bean id="bar" class="com.tutorialspoint.dependencyinjection.Bar" />
+	<bean id="baz" class="com.tutorialspoint.dependencyinjection.Baz" />
+
+	<bean id="fooRef" class="com.tutorialspoint.dependencyinjection.Foo">
+		<constructor-arg ref="bar" />
+		<constructor-arg ref="baz" />
+	</bean>
+
+	<bean id="fooType" class="com.tutorialspoint.dependencyinjection.Foo">
+		<constructor-arg type="int" value="2001" />
+		<constructor-arg type="java.lang.String" value="Zara" />
+		<constructor-arg type="int" value="64" />
+	</bean>
+
+	<bean id="fooIndex" class="com.tutorialspoint.dependencyinjection.Foo">
+		<constructor-arg index="0" value="2015" />
+		<constructor-arg index="1" value="Adam" />
+		<constructor-arg index="2" value="85" />
+	</bean>
+
+	<bean id="fooName" class="com.tutorialspoint.dependencyinjection.Foo">
+		<constructor-arg name="year" value="1800" />
+		<constructor-arg name="name" value="Sparrow" />
+		<constructor-arg name="weight" value="80" />
+	</bean>
 
 </beans>
