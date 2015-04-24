@@ -14,5 +14,16 @@
       <property name="message1" value="Hello India!"/>
       <property name="message3" value="Namaste India!"/>
    </bean>
+   
+   <bean id="beanTeamplate" abstract="true">
+      <property name="message1" value="Template Hello World!"/>
+      <property name="message2" value="Template Hello Second World!"/>
+      <property name="message3" value="Template Namaste India!"/>
+   </bean>
+   
+   <bean id="helloIndiaAgain" class="com.tutorialspoint.beandefinitioninheritance.HelloIndia" parent="beanTeamplate">
+      <property name="message1" value="Hello India!"/>
+      <property name="message3" value="Namaste India!"/>
+   </bean>
 
 </beans>

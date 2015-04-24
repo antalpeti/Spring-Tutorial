@@ -18,5 +18,10 @@ public class MainApp {
     objB.getMessage1();
     objB.getMessage2();
     objB.getMessage3();
+
+    HelloIndia objC = (HelloIndia) context.getBean("helloIndiaAgain");
+    objC.getMessage1();
+    objC.getMessage2();
+    objC.getMessage3();
   }
 }
