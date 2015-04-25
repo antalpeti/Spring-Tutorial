@@ -21,5 +21,15 @@ public class MainApp {
     te = (TextEditor) context.getBean("textEditorSetter");
 
     te.spellCheck();
+
+    System.out.println("With Standard XML Configuration");
+    Person john = (Person) context.getBean("john-classic");
+    System.out.println("name : " + john.getName());
+    System.out.println("spouse : " + john.getSpouse());
+
+    System.out.println("With p-namespace");
+    john = (Person) context.getBean("john-p");
+    System.out.println("name : " + john.getName());
+    System.out.println("spouse : " + john.getSpouse());
   }
 }
