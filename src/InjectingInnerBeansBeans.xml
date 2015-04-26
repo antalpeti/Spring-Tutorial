@@ -5,11 +5,18 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-	<!-- Definition for textEditor bean using inner bean -->
-	<bean id="textEditor" class="com.tutorialspoint.injectinginnerbeans.TextEditor">
+	<!-- Definition for textEditor bean using inner bean with property -->
+	<bean id="textEditorProp" class="com.tutorialspoint.injectinginnerbeans.TextEditor">
 		<property name="spellChecker">
-			<bean id="spellChecker" class="com.tutorialspoint.dependencyinjection.SpellChecker" />
+			<bean id="spellCheckerProp" class="com.tutorialspoint.dependencyinjection.SpellChecker" />
 		</property>
 	</bean>
-	
+
+	<!-- Definition for textEditor bean using inner bean -->
+	<bean id="textEditorConstr" class="com.tutorialspoint.injectinginnerbeans.TextEditor">
+		<constructor-arg index="0">
+			<bean id="spellCheckerConstr" class="com.tutorialspoint.dependencyinjection.SpellChecker" />
+		</constructor-arg>
+	</bean>
+
 </beans>
