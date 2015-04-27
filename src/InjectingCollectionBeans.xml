@@ -5,6 +5,14 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
+	<bean id="address1" class="com.tutorialspoint.injectingcollection.Address">
+		<property name="address" value="Hungary" />
+	</bean>
+
+	<bean id="address2" class="com.tutorialspoint.injectingcollection.Address">
+		<property name="address" value="Finnland" />
+	</bean>
+
 	<!-- Definition for javaCollection -->
 	<bean id="javaCollection" class="com.tutorialspoint.injectingcollection.JavaCollection">
 
@@ -15,12 +23,16 @@
 				<value>Pakistan</value>
 				<value>USA</value>
 				<value>USA</value>
+				<ref bean="address1" />
+				<ref bean="address2" />
 			</list>
 		</property>
 
 		<!-- results in a setAddressSet(java.util.Set) call -->
 		<property name="addressSet">
 			<set>
+				<ref bean="address1" />
+				<ref bean="address2" />
 				<value>INDIA</value>
 				<value>Pakistan</value>
 				<value>USA</value>
@@ -35,6 +47,8 @@
 				<entry key="2" value="Pakistan" />
 				<entry key="3" value="USA" />
 				<entry key="4" value="USA" />
+				<entry key="5" value-ref="address1" />
+				<entry key="6" value-ref="address2" />
 			</map>
 		</property>
 
