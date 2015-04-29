@@ -14,5 +14,9 @@ public class MainApp {
     TextEditor teByName = (TextEditor) context.getBean("textEditorByName");
     teByName.spellCheck();
     System.out.println(teByName.getName());
+
+    TextEditor teByType = (TextEditor) context.getBean("textEditorByType");
+    teByType.spellCheck();
+    System.out.println(teByType.getName());
   }
 }
