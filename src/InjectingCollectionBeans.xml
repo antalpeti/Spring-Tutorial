@@ -13,6 +13,16 @@
 		<property name="address" value="Finnland" />
 	</bean>
 
+	<!-- Injecting empty string values -->
+	<bean id="address3" class="com.tutorialspoint.injectingcollection.Address">
+		<property name="address" value="" />
+	</bean>
+
+	<!-- Injecting null string values -->
+	<bean id="address4" class="com.tutorialspoint.injectingcollection.Address">
+		<property name="address"><null/></property>
+	</bean>
+
 	<!-- Definition for javaCollection -->
 	<bean id="javaCollection" class="com.tutorialspoint.injectingcollection.JavaCollection">
 
@@ -25,6 +35,8 @@
 				<value>USA</value>
 				<ref bean="address1" />
 				<ref bean="address2" />
+				<ref bean="address3" />
+				<ref bean="address4" />
 			</list>
 		</property>
 
@@ -37,6 +49,8 @@
 				<value>Pakistan</value>
 				<value>USA</value>
 				<value>USA</value>
+				<ref bean="address3" />
+				<ref bean="address4" />
 			</set>
 		</property>
 
@@ -49,6 +63,8 @@
 				<entry key="4" value="USA" />
 				<entry key="5" value-ref="address1" />
 				<entry key="6" value-ref="address2" />
+				<entry key="7" value-ref="address3" />
+				<entry key="8" value-ref="address4" />
 			</map>
 		</property>
 
