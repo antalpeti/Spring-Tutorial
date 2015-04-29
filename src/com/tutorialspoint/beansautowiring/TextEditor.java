@@ -4,6 +4,13 @@ public class TextEditor {
   private SpellChecker spellChecker;
   private String name;
 
+  public TextEditor() {}
+
+  public TextEditor(SpellChecker spellChecker, String name) {
+    this.spellChecker = spellChecker;
+    this.name = name;
+  }
+
   public void setSpellChecker(SpellChecker spellChecker) {
     this.spellChecker = spellChecker;
   }

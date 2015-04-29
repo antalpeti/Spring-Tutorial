@@ -18,5 +18,13 @@ public class MainApp {
     TextEditor teByType = (TextEditor) context.getBean("textEditorByType");
     teByType.spellCheck();
     System.out.println(teByType.getName());
+
+    TextEditor teConstr = (TextEditor) context.getBean("textEditorConstr");
+    teConstr.spellCheck();
+    System.out.println(teConstr.getName());
+
+    TextEditor teConstructor = (TextEditor) context.getBean("textEditorConstructor");
+    teConstructor.spellCheck();
+    System.out.println(teConstructor.getName());
   }
 }
