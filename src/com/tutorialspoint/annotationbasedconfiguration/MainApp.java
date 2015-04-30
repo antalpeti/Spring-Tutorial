@@ -1,11 +1,11 @@
 package com.tutorialspoint.annotationbasedconfiguration;
 
-import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class MainApp {
   public static void main(String[] args) {
-    ApplicationContext context =
+    AbstractApplicationContext context =
         new ClassPathXmlApplicationContext("AnnotationBasedConfigurationBeans.xml");
 
     Student student = (Student) context.getBean("student");
@@ -21,5 +21,9 @@ public class MainApp {
 
     profile.printAge();
     profile.printName();
+
+    HelloWorld obj = (HelloWorld) context.getBean("helloWorld");
+    obj.getMessage();
+    context.registerShutdownHook();
   }
 }
