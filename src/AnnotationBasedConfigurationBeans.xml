@@ -39,8 +39,8 @@
 
 	<!-- Definition for student2 bean -->
 	<bean id="student2" class="com.tutorialspoint.annotationbasedconfiguration.Student">
-		<property name="name" value="Zara" />
-		<property name="age" value="11" />
+		<property name="name" value="Tom" />
+		<property name="age" value="15" />
 	</bean>
 
 	<bean id="helloWorld"
