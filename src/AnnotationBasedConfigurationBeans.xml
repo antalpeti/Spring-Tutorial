@@ -24,5 +24,21 @@
    <!-- Definition for spellChecker bean -->
    <bean id="spellChecker" class="com.tutorialspoint.annotationbasedconfiguration.SpellChecker">
    </bean>
+   
+   <!-- Definition for profile bean -->
+   <bean id="profile" class="com.tutorialspoint.annotationbasedconfiguration.Profile">
+   </bean>
+   
+   <!-- Definition for student1 bean -->
+   <bean id="student1" class="com.tutorialspoint.annotationbasedconfiguration.Student">
+      <property name="name"  value="Nuha" />
+      <property name="age"  value="2"/>
+   </bean>
+   
+   <!-- Definition for student2 bean -->
+   <bean id="student2" class="com.tutorialspoint.annotationbasedconfiguration.Student">
+      <property name="name"  value="Zara" />
+      <property name="age"  value="11"/>
+   </bean>
 
 </beans>

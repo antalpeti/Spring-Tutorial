@@ -16,5 +16,10 @@ public class MainApp {
     TextEditor te = (TextEditor) context.getBean("textEditor");
 
     te.spellCheck();
+
+    Profile profile = (Profile) context.getBean("profile");
+
+    profile.printAge();
+    profile.printName();
   }
 }
