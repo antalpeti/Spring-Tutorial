@@ -12,5 +12,9 @@ public class MainApp {
 
     System.out.println("Name : " + student.getName());
     System.out.println("Age : " + student.getAge());
+
+    TextEditor te = (TextEditor) context.getBean("textEditor");
+
+    te.spellCheck();
   }
 }

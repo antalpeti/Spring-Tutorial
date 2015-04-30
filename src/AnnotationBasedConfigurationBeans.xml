@@ -16,5 +16,13 @@
 		<!-- try without passing age and check the result -->
 		<property name="age" value="11" />
 	</bean>
+	
+	<!-- Definition for textEditor bean without constructor-arg  -->
+   <bean id="textEditor" class="com.tutorialspoint.annotationbasedconfiguration.TextEditor">
+   </bean>
+
+   <!-- Definition for spellChecker bean -->
+   <bean id="spellChecker" class="com.tutorialspoint.annotationbasedconfiguration.SpellChecker">
+   </bean>
 
 </beans>
