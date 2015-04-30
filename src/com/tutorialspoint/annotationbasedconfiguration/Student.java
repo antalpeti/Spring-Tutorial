@@ -1,12 +1,14 @@
 package com.tutorialspoint.annotationbasedconfiguration;
 
-import org.springframework.beans.factory.annotation.Required;
+import org.springframework.beans.factory.annotation.Autowired;
+
 
 public class Student {
   private Integer age;
   private String name;
 
-  @Required
+  // @Required
+  @Autowired(required = false)
   public void setAge(Integer age) {
     this.age = age;
   }
@@ -15,7 +17,9 @@ public class Student {
     return age;
   }
 
-  @Required
+
+  // @Required
+  @Autowired(required = false)
   public void setName(String name) {
     this.name = name;
   }
