@@ -17,5 +17,10 @@ public class MainApp {
     TextEditor te = ctx.getBean(TextEditor.class);
 
     te.spellCheck();
+
+    ctx = new AnnotationConfigApplicationContext(ConfigB.class);
+    // now both beans A and B will be available...
+    A a = ctx.getBean(A.class);
+    B b = ctx.getBean(B.class);
   }
 }
