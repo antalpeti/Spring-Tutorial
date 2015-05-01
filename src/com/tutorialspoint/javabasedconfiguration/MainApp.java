@@ -11,5 +11,11 @@ public class MainApp {
 
     helloWorld.setMessage("Hello World!");
     helloWorld.getMessage();
+
+    ctx = new AnnotationConfigApplicationContext(TextEditorConfig.class);
+
+    TextEditor te = ctx.getBean(TextEditor.class);
+
+    te.spellCheck();
   }
 }
