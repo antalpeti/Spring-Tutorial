@@ -22,5 +22,13 @@ public class MainApp {
     // now both beans A and B will be available...
     A a = ctx.getBean(A.class);
     B b = ctx.getBean(B.class);
+
+    ctx = new AnnotationConfigApplicationContext(AppConfig.class);
+
+    Foo foo1 = ctx.getBean(Foo.class);
+    Foo foo2 = ctx.getBean(Foo.class);
+    System.out.println("foo1 == foo2 : " + (foo1 == foo2));
+    System.out.println(foo1);
+    System.out.println(foo2);
   }
 }
