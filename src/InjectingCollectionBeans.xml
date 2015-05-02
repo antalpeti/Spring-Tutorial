@@ -20,7 +20,9 @@
 
 	<!-- Injecting null string values -->
 	<bean id="address4" class="com.tutorialspoint.injectingcollection.Address">
-		<property name="address"><null/></property>
+		<property name="address">
+			<null />
+		</property>
 	</bean>
 
 	<!-- Definition for javaCollection -->

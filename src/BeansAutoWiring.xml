@@ -16,24 +16,24 @@
 		autowire="byName">
 		<property name="name" value="Generic Text Editor ByName" />
 	</bean>
-	
+
 	<!-- Definition for textEditor bean -->
-   <bean id="textEditorByType" class="com.tutorialspoint.beansautowiring.TextEditor" 
-      autowire="byType">
-      <property name="name" value="Generic Text Editor ByType" />
-   </bean>
-   
-   <!-- Definition for textEditor bean -->
-   <bean id="textEditorConstr" class="com.tutorialspoint.beansautowiring.TextEditor">
-      <constructor-arg  ref="spellChecker" />
-      <constructor-arg  value="Generic Text Editor"/>
-   </bean>
-   
-   <!-- Definition for textEditor bean -->
-   <bean id="textEditorConstructor" class="com.tutorialspoint.beansautowiring.TextEditor" 
-      autowire="constructor">
-      <constructor-arg value="Generic Text Editor Constructor"/>
-   </bean>
+	<bean id="textEditorByType" class="com.tutorialspoint.beansautowiring.TextEditor"
+		autowire="byType">
+		<property name="name" value="Generic Text Editor ByType" />
+	</bean>
+
+	<!-- Definition for textEditor bean -->
+	<bean id="textEditorConstr" class="com.tutorialspoint.beansautowiring.TextEditor">
+		<constructor-arg ref="spellChecker" />
+		<constructor-arg value="Generic Text Editor" />
+	</bean>
+
+	<!-- Definition for textEditor bean -->
+	<bean id="textEditorConstructor" class="com.tutorialspoint.beansautowiring.TextEditor"
+		autowire="constructor">
+		<constructor-arg value="Generic Text Editor Constructor" />
+	</bean>
 
 	<!-- Definition for spellChecker bean -->
 	<bean id="spellChecker" class="com.tutorialspoint.beansautowiring.SpellChecker">

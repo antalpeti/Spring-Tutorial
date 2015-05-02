@@ -59,7 +59,7 @@
 	</bean>
 
 	<bean name="jane-p" class="com.tutorialspoint.dependencyinjection.Person"
-		p:name="Jane Doe P" >
+		p:name="Jane Doe P">
 	</bean>
 
 </beans>
