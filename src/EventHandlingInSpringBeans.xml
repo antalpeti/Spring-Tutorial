@@ -12,5 +12,9 @@
 	<bean id="cStartEventHandler" class="com.tutorialspoint.eventhandling.CStartEventHandler" />
 
 	<bean id="cStopEventHandler" class="com.tutorialspoint.eventhandling.CStopEventHandler" />
+	
+	<bean id="cRefreshEventHandler" class="com.tutorialspoint.eventhandling.CRefreshEventHandler" />
+	
+	<bean id="cCloseEventHandler" class="com.tutorialspoint.eventhandling.CCloseEventHandler" />
 
 </beans>

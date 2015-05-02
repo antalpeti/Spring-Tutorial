@@ -14,8 +14,10 @@ public class MainApp {
     HelloWorld obj = (HelloWorld) context.getBean("helloWorld");
 
     obj.getMessage();
+    context.refresh();
 
     // Let us raise a stop event.
     context.stop();
+    context.close();
   }
 }
